@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Eau De Perfume Spray",
+    "description": "Genuine  Al-Rehab spray perfume from UAE/Saudi Arabia/Yemen High ",
+    "price": "300",
+    "discountPercentage": "278",
+    "rating": "4",
+    "stock": "103",
+    "category": "perfume",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/15/1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Handcraft Chinese style",
+    "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
+    "price": "5690",
+    "discountPercentage": "2660",
+    "rating": "4",
+    "stock": "28",
+    "category": "home decor",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/29/1.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Flying Wooden Bird",
+    "description": "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
+    "price": "2002",
+    "discountPercentage": "1500",
+    "rating": "5",
+    "stock": "25",
+    "category": "home decor",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/27/1.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Key Holder Hanging",
+    "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium",
+    "price": "2300",
+    "discountPercentage": "2000",
+    "rating": "4",
+    "stock": "20",
+    "category": "home decor",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "cereals muesli fruit nuts",
+    "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+    "price": "460",
+    "discountPercentage": "430",
+    "rating": "4",
+    "stock": "112",
+    "category": "groceries",
+    "images": [
+      "https://cdn.dummyjson.com/product-images/24/1.jpg"
+    ]
+  }
+]
