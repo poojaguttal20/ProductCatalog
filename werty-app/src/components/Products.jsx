@@ -68,6 +68,7 @@ export default function Products({
                   Discount: {product.discountPercentage}
                 </p>
                 <p className="card-text">Category:{product.category}</p> */}
+
                   {user.admin ? (
                     <div className="d-flex justify-content-between align-items-center">
                       <button

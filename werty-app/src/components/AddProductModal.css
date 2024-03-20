@@ -1,0 +1,72 @@
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure modal is on top of other elements */
+    overflow: auto; /* Allow scrolling if modal content exceeds viewport height */
+  }
+   
+  .modal.show {
+    display: block; /* Show modal when 'show' prop is true */
+  }
+   
+  .modal-dialog {
+    margin: 10% auto; /* Center modal vertically and horizontally */
+    max-width: 600px; /* Set maximum width of modal */
+    background-color: #fff; /* Modal background color */
+    border-radius: 5px;
+  }
+   
+  .modal-content {
+    padding: 20px; /* Add padding to modal content */
+  }
+   
+  .modal-header {
+    border-bottom: 1px solid #ccc; /* Add border at bottom of header */
+    padding-bottom: 10px; /* Add padding at bottom of header */
+  }
+   
+  .modal-title {
+    margin: 0; /* Remove margin from title */
+  }
+   
+  .modal-body {
+    padding-bottom: 20px; /* Add padding at bottom of body */
+  }
+   
+  .modal-footer {
+    border-top: 1px solid #ccc; /* Add border at top of footer */
+    padding-top: 10px; /* Add padding at top of footer */
+    text-align: right; /* Align buttons to the right */
+  }
+   
+  .close {
+    cursor: pointer; /* Set cursor to pointer for close button */
+    position: absolute; /* Position close button absolutely */
+    top: 10px; /* Set top position */
+    right: 10px; /* Set right position */
+    font-size: 20px; /* Set font size */
+    color: #aaa; /* Set close button color */
+  }
+   
+  .close:hover {
+    color: #666; /* Change close button color on hover */
+  }
+   
+  .form-group {
+    margin-bottom: 20px; /* Add bottom margin to form groups */
+  }
+   
+  .form-control {
+    width: 100%; /* Set form controls to full width */
+  }
+   
+  .btn-primary,
+  .btn-secondary {
+    width: 100px; /* Set width for buttons */
+    margin-left: 10px; /* Add left margin between buttons */
+  }

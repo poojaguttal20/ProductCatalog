@@ -1,0 +1,11 @@
+.input-field{
+    width:350px;
+}
+
+.input{
+    align-items: center;
+}
+
+.input-field:hover{
+    background-color: #f0f0f0;
+}

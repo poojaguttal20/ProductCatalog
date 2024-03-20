@@ -1,0 +1,14 @@
+.nav-link:hover{
+    color:#FD5F07;
+}
+.title{
+    color: #FD5F07;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+}

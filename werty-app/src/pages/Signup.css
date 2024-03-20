@@ -1,0 +1,21 @@
+.button-style:hover{
+    color: #fff;
+    border-color: #fff;
+    transform:scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: #FD5F07;
+}
+.button-style{
+    color: #ffff;
+    background-color: #FD5F07;
+    border-color: #ffff;
+    margin-left: 60px;
+}
+
+.button-style:active{
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+
