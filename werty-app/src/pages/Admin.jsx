@@ -1,15 +1,19 @@
-import { useCallback, useEffect } from "react";
+import { useContext } from "react";
+// import { useCallback, useEffect } from "react";
 import { useState } from "react";
 import AddProductModal from "../components/AddProductModal";
 import DeleteProductModal from "../components/DeleteProductModal";
 import Products from "../components/Products";
+import { DataContext } from '../store/DataStore';
 
 export default function Admin({ user }) {
   const [showAddProductModal, setShowAddProductModal] = useState(false);
   const [showDeleteProductModal, setShowDeleteProductModal] = useState(false);
   const [deleteProductData, setDeleteProductData] = useState(null);
-  const [products, setProducts] = useState([]);
   const [editProductData, setEditProductData] = useState(null);
+
+  const {products, fetchData} = useContext(DataContext);
+  
 
   const handleButtonClick = async (action, productId) => {
       try {
@@ -47,29 +51,7 @@ export default function Admin({ user }) {
     
   };
 
-  const fetchData = useCallback(async () => {
-    try {
-      const response = await fetch("http://localhost:3001/products", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if (response.ok) {
-        const data = await response.json();
-        setProducts(data);
-        console.log("Displayed products");
-      } else {
-        console.log("Error fetching products");
-      }
-    } catch (error) {
-      console.log("error", error);
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+  
 
   const onSubmit = async (formData) => {
     console.log(JSON.stringify(formData));
