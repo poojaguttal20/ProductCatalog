@@ -148,9 +148,9 @@ export default function Admin({ user }) {
 
       <Products
         user={user}
-        products={products}
+        // products={products}
         handleButtonClick={handleButtonClick}
-        fetchData={fetchData}
+        // fetchData={fetchData}
       />
       <AddProductModal
         show={showAddProductModal}

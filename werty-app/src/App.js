@@ -13,6 +13,9 @@ import User from "./pages/User";
 import { DataProvider } from "./store/DataStore";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
+import Wishlist from "./pages/Whislist";
+import Home from "./pages/Home";
+
 
 function App() {
   const [authenticated, setAuthenticated] = useState(!!localStorage.getItem('LoggedInUser'));
@@ -43,6 +46,7 @@ function App() {
       path: "/",
       element: <Routing user={user} onLogout={handleLogout} />,
       children: [
+        {path: "/home", element: <Home/>},
         { path: "/signup", element: <Signup /> },
         { path: "/login", element: <Login onLogin={handleLogin} /> },
         {
@@ -63,11 +67,15 @@ function App() {
         },
         {
           path: "/product/:productId",
-          element: authenticated ? <ProductDetail /> : <Navigate to="/login" />,
+          element: authenticated ? (<ProductDetail />) : (<Navigate to="/login" />),
         },
         {
           path: "/cart",
-          element: authenticated ? <Cart /> : <Navigate to="/login"/>
+          element: authenticated ? (<Cart />) : (<Navigate to="/login"/>)
+        },
+        {
+          path: "/wish",
+          element: authenticated ? (<Wishlist/>) : (<Navigate to="/login"/>)
         },
       ],
     },

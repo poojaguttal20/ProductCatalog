@@ -13,10 +13,10 @@ export default function Navbar({ logo, links, user, onLogout }) {
         </Link>
         <ul
           className="navbar-nav ml-auto"
-          style={{ display: "flex", alignItems: "center" }}
+          style={{ display:"flex", alignItems: "center" }}
         >
           {user &&
-            (location.pathname === "/admin" ||
+            (location.pathname === "/admin" || location.pathname === "/product/:productId" || location.pathname === "/cart" || location.pathname === "/wish" || 
               location.pathname === "/user") && (
               <li className="nav-item">
                 <span className="nav-link">{user.email}</span>
@@ -31,7 +31,7 @@ export default function Navbar({ logo, links, user, onLogout }) {
 
           {(location.pathname === "/" ||
             location.pathname === "/signup" ||
-            location.pathname === "/login") &&
+            location.pathname === "/login" || location.pathname === "/home") &&
             links.map((link) => (
               <li className="nav-item" key={link.label}>
                 <Link
